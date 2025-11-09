@@ -13,11 +13,6 @@
 
 <div align="center">
   <img src="assets/genova-logo.svg" alt="Genova Logo" width="200"/>
-
-[![Kotlin](https://img.shields.io/badge/Kotlin-1.9.0-blue.svg)](https://kotlinlang.org)
-[![Compose Multiplatform](https://img.shields.io/badge/Compose%20Multiplatform-1.5.0-orange.svg)](https://github.com/JetBrains/compose-multiplatform)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Code Checks](https://github.com/GenovaIPTV/Genova/actions/workflows/code-checks.yml/badge.svg)](https://github.com/GenovaIPTV/Genova/actions/workflows/code-checks.yml)
 </div>
 
 ---
@@ -28,18 +23,62 @@
 
 ---
 
+## 🧪 Join the Beta Testing Program
+
+<div align="center">
+
+### 🚀 **Help us improve Genova IPTV!**
+
+**Join our beta testing program and get early access to new features.**
+
+</div>
+
+### 📱 Join Beta Testing (Android)
+
+Choose the method that works best for you:
+
+- **[Join from Android Device](https://play.google.com/store/apps/details?id=com.genova.player)** - Open this link directly on your Android phone or tablet
+- **[Join from Web Browser](https://play.google.com/apps/testing/com.genova.player)** - Join from any device, then install on your Android device
+
+> **How it works**: Click one of the links above → Accept the beta invitation → Install Genova IPTV from Google Play Store → Start testing!
+
+### 💬 Share Your Feedback
+
+We value your input! Here's how you can help:
+
+- **🐛 Report Bugs**: [Open an issue on GitHub](https://github.com/GenovaIPTV/genova-public/issues) - For technical issues, crashes, or bugs
+- **💡 Feature Requests & Discussions**: [Join our Google Group](https://groups.google.com/u/1/g/genova-player) - For questions, feature suggestions, and community discussions
+
+### 📋 What to Test
+
+- Live TV streaming and EPG
+- VOD movies and TV series playback
+- Provider management (Xtream Codes, M3U/M3U8)
+- Search functionality
+- Navigation and UI/UX
+- Performance and stability
+
+**Thank you for helping make Genova IPTV better!** 🙏
+
+---
+
 ## 🌟 Key Features
 
-- **Universal Compatibility**: Works with Xtream Codes, M3U/M3U8 playlists, and public IPTV sources.
-- **All Platforms**: Android, iOS, tvOS, macOS, Windows, Linux, Android TV.
-- **Modern UI**: Clean, ergonomic, and responsive interface inspired by Material Design 3.
-- **Live TV & EPG**: Browse live channels with integrated Electronic Program Guide (EPG).
-- **Favorites & Playlists**: Organize your favorite channels and create custom playlists.
-- **Cloud Sync**: Keep your favorites and settings synchronized across all your devices (premium).
-- **Advanced Playback**: Picture-in-Picture, parental controls, adaptive streaming, and more.
-- **Smart Search & Filters**: Quickly find channels by name, language, country, or category.
-- **Customizable**: Choose your theme, layout, and playback preferences.
-- **No IPTV Service Provided**: Genova is a player only. You must provide your own IPTV sources.
+### Core Functionality
+- **Universal Compatibility**: Works with Xtream Codes, M3U/M3U8 playlists, and public IPTV sources
+- **Current Platforms**: Android and tvOS (Apple TV)
+- **Coming Soon**: iOS, macOS, Windows, Linux, Android TV
+- **Live TV & EPG**: Browse channels with integrated Electronic Program Guide
+- **VOD & Series**: Browse movies and TV series with category organization
+- **Smart Search**: Real-time search across all content types
+- **Provider Management**: Full provider management with validation and testing
+- **No IPTV Service**: Player only - you provide your own IPTV sources
+
+### User Experience
+- **Modern UI**: Clean, ergonomic, and responsive interface with Material Design 3 (Android) and SwiftUI (tvOS)
+- **Platform-Optimized Navigation**: Intuitive navigation tailored to each platform
+- **Category-Based Content**: Intelligent organization by categories for all content types
+- **Fullscreen Video Player**: High-quality playback for Live TV, VOD, and Series
 
 ---
 
