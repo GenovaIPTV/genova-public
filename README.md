@@ -19,7 +19,7 @@
 
 ## 🎬 What is Genova IPTV?
 
-**Genova IPTV** is a next-generation IPTV player designed for everyone. Enjoy your favorite TV channels, shows, and VOD content on any device, with a beautiful and intuitive interface. Genova is free to use, with optional premium features for power users.
+**Genova IPTV** is a next-generation IPTV player designed for everyone. Enjoy your favorite TV channels, shows, and VOD content on any device, with a beautiful and intuitive interface. Genova is completely free to use.
 
 ---
 
@@ -90,21 +90,10 @@ We value your input! Here's how you can help:
    - Enter your Xtream Codes credentials or M3U/M3U8 playlist URL
    - Genova will automatically fetch and organize your channels
 3. **Browse & Watch**:
-   - Use the Dashboard for what's live now
-   - Explore categories, search, and mark favorites
-   - Enjoy advanced playback features
-
----
-
-## 💎 Premium Features
-
-Unlock even more with Genova Premium:
-- **Ad-free experience**
-- **Cloud synchronization** of favorites and settings
-- **Advanced playlist management**
-- **Custom themes and layouts**
-- **Picture-in-Picture mode**
-- **Priority support**
+   - Explore Live TV channels organized by categories
+   - Browse VOD movies and TV series
+   - Use search to find specific content
+   - Enjoy fullscreen video playback
 
 ---
 
@@ -114,28 +103,20 @@ Unlock even more with Genova Premium:
 > No. Genova is a player only. You must provide your own legal IPTV sources (Xtream, M3U, etc.).
 
 **Q: Is Genova free?**
-> Yes! All core features are free. Premium unlocks advanced options and cloud sync.
+> Yes! Genova is completely free to use. All features are available without any cost.
 
 **Q: Is my data private?**
-> Yes. Your playlists and settings are stored locally unless you enable cloud sync (premium).
+> Yes. Your playlists and settings are stored locally on your device. We don't collect or transmit your data.
 
 **Q: Where can I get help?**
-> See the [User Documentation](https://docs.genova.app) or contact support below.
+> Join our [Google Group](https://groups.google.com/u/1/g/genova-player) for questions, discussions, and community support.
 
 ---
 
 ## 🆘 Support & Contact
 
-- **User Documentation**: [docs.genova.app](https://docs.genova.app)
-- **Community Forum**: [community.genova.app](https://community.genova.app)
-- **Email Support**: [support@genova.app](mailto:support@genova.app)
-- **Bug Reports**: [GitHub Issues](https://github.com/GenovaIPTV/Genova/issues)
-
----
-
-## 📄 License
-
-MIT License – see [LICENSE](LICENSE)
+- **Community Forum**: [Google Group](https://groups.google.com/u/1/g/genova-player) - Join our beta testing community for discussions and support
+- **Bug Reports**: [GitHub Issues](https://github.com/GenovaIPTV/genova-public/issues) - Report bugs and technical issues
 
 ---
 
