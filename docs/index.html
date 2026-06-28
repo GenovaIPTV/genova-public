@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Genova IPTV — Free Universal IPTV Player</title>
+  <meta name="description" content="Genova IPTV is a free, beautiful IPTV player for Android and Apple TV. Watch Live TV, movies, and series from your own IPTV provider." />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://genovaiptv.github.io/genova-public/" />
+  <meta property="og:title" content="Genova IPTV — Free Universal IPTV Player" />
+  <meta property="og:description" content="Watch Live TV, movies, and series from your own IPTV provider. Free, beautiful, and available on Android & Apple TV." />
+  <meta property="og:image" content="https://genovaiptv.github.io/genova-public/assets/feature-graphic.png" />
+  <meta property="og:image:width" content="1024" />
+  <meta property="og:image:height" content="500" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Genova IPTV — Free Universal IPTV Player" />
+  <meta name="twitter:description" content="Watch Live TV, movies, and series from your own IPTV provider. Free, beautiful, and available on Android & Apple TV." />
+  <meta name="twitter:image" content="https://genovaiptv.github.io/genova-public/assets/feature-graphic.png" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0a0a0f;
+      --surface: #12121a;
+      --surface2: #1a1a26;
+      --accent: #6c63ff;
+      --accent2: #ff6584;
+      --text: #f0f0f8;
+      --muted: #8888aa;
+      --border: rgba(108,99,255,.2);
+      --radius: 16px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 32px;
+      background: rgba(10,10,15,.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); font-weight: 700; font-size: 1.1rem; }
+    .nav-logo img { width: 32px; height: 32px; }
+    .nav-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 20px; border-radius: 999px;
+      background: var(--accent); color: #fff; text-decoration: none;
+      font-size: .875rem; font-weight: 600;
+      transition: opacity .2s;
+    }
+    .nav-cta:hover { opacity: .85; }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center;
+      padding: 100px 24px 60px;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(108,99,255,.18) 0%, transparent 70%);
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 6px 14px; border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(108,99,255,.12);
+      font-size: .8rem; color: var(--accent); font-weight: 600;
+      margin-bottom: 28px; letter-spacing: .04em;
+    }
+    .hero h1 {
+      font-size: clamp(2.4rem, 6vw, 4.5rem);
+      font-weight: 800; line-height: 1.1;
+      background: linear-gradient(135deg, #fff 0%, #c4c0ff 50%, #6c63ff 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      color: var(--muted); max-width: 560px; margin: 0 auto 40px;
+    }
+    .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; margin-bottom: 64px; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 14px 28px; border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), #8b84ff);
+      color: #fff; text-decoration: none; font-weight: 700; font-size: 1rem;
+      box-shadow: 0 8px 32px rgba(108,99,255,.4);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(108,99,255,.55); }
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 14px 28px; border-radius: 999px;
+      border: 1px solid var(--border); background: var(--surface);
+      color: var(--text); text-decoration: none; font-weight: 600; font-size: 1rem;
+      transition: border-color .2s, background .2s;
+    }
+    .btn-secondary:hover { border-color: var(--accent); background: rgba(108,99,255,.08); }
+
+    /* SCREENSHOTS */
+    .screenshots {
+      display: flex; gap: 20px; justify-content: center; align-items: flex-end;
+      max-width: 700px; margin: 0 auto;
+    }
+    .screenshot-card {
+      border-radius: 24px; overflow: hidden;
+      border: 1px solid rgba(255,255,255,.1);
+      box-shadow: 0 24px 64px rgba(0,0,0,.6);
+      flex: 1; max-width: 200px;
+      transition: transform .3s;
+    }
+    .screenshot-card:hover { transform: translateY(-8px); }
+    .screenshot-card.center { transform: scale(1.08); max-width: 220px; }
+    .screenshot-card.center:hover { transform: scale(1.08) translateY(-8px); }
+    .screenshot-card img { width: 100%; display: block; }
+
+    /* SECTION */
+    section { padding: 80px 24px; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .section-label { font-size: .8rem; text-transform: uppercase; letter-spacing: .12em; color: var(--accent); font-weight: 700; margin-bottom: 12px; }
+    .section-title { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; margin-bottom: 16px; }
+    .section-desc { color: var(--muted); max-width: 560px; font-size: 1.05rem; }
+
+    /* FEATURES GRID */
+    .features { background: var(--surface); }
+    .features-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px; margin-top: 48px;
+    }
+    .feature-card {
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 28px;
+      transition: border-color .2s, transform .2s;
+    }
+    .feature-card:hover { border-color: var(--accent); transform: translateY(-4px); }
+    .feature-icon { font-size: 2rem; margin-bottom: 16px; }
+    .feature-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
+    .feature-card p { color: var(--muted); font-size: .9rem; }
+
+    /* PLATFORMS */
+    .platforms-row { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 40px; }
+    .platform-pill {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 12px 20px; border-radius: 12px;
+      background: var(--surface2); border: 1px solid var(--border);
+      font-weight: 600; font-size: .95rem;
+    }
+    .platform-pill .badge {
+      font-size: .7rem; padding: 2px 8px; border-radius: 999px;
+      font-weight: 700; letter-spacing: .04em;
+    }
+    .badge-live { background: rgba(108,99,255,.2); color: var(--accent); }
+    .badge-soon { background: rgba(255,101,132,.15); color: var(--accent2); }
+
+    /* BETA */
+    .beta { background: var(--surface); }
+    .beta-card {
+      background: linear-gradient(135deg, rgba(108,99,255,.15) 0%, rgba(255,101,132,.1) 100%);
+      border: 1px solid var(--border); border-radius: 24px;
+      padding: 48px; text-align: center;
+    }
+    .beta-card h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 800; margin-bottom: 12px; }
+    .beta-card p { color: var(--muted); max-width: 480px; margin: 0 auto 32px; }
+    .beta-links { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+
+    /* FAQ */
+    .faq-list { margin-top: 48px; display: flex; flex-direction: column; gap: 16px; }
+    .faq-item {
+      background: var(--surface2); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 24px;
+    }
+    .faq-item h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+    .faq-item p { color: var(--muted); font-size: .9rem; }
+
+    /* FOOTER */
+    footer {
+      background: var(--surface); border-top: 1px solid var(--border);
+      padding: 40px 24px; text-align: center;
+    }
+    .footer-links { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; }
+    .footer-links a { color: var(--muted); text-decoration: none; font-size: .9rem; transition: color .2s; }
+    .footer-links a:hover { color: var(--text); }
+    footer p { color: var(--muted); font-size: .85rem; }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      nav { padding: 12px 16px; }
+      .screenshot-card { display: none; }
+      .screenshot-card.center { display: block; max-width: 240px; }
+      .beta-card { padding: 32px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <img src="https://raw.githubusercontent.com/GenovaIPTV/genova-public/main/assets/genova-logo.svg" alt="Genova" />
+    Genova IPTV
+  </a>
+  <a href="https://play.google.com/apps/testing/com.genova.player" class="nav-cta" target="_blank" rel="noopener">
+    ▶ Join Beta
+  </a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">✦ Free & Open Beta</div>
+  <h1>Your IPTV.<br>Beautiful. Everywhere.</h1>
+  <p>Watch live TV, movies, and series from your own IPTV provider. Available on Android and Apple TV — completely free.</p>
+  <div class="hero-actions">
+    <a href="https://play.google.com/apps/testing/com.genova.player" class="btn-primary" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.5c.42.24.91.26 1.35.05L17.82 12 4.53.45c-.44-.21-.93-.19-1.35.05C2.73.74 2.5 1.32 2.5 2v20c0 .68.23 1.26.68 1.5z"/></svg>
+      Get on Android
+    </a>
+    <a href="https://groups.google.com/g/genova-player" class="btn-secondary" target="_blank" rel="noopener">
+      💬 Join Community
+    </a>
+  </div>
+
+  <div class="screenshots">
+    <div class="screenshot-card">
+      <img src="assets/screenshot-phone-1.png" alt="Genova IPTV - Live TV" loading="lazy" />
+    </div>
+    <div class="screenshot-card center">
+      <img src="assets/screenshot-phone-2.png" alt="Genova IPTV - Home" loading="lazy" />
+    </div>
+    <div class="screenshot-card">
+      <img src="assets/screenshot-phone-1.png" alt="Genova IPTV - VOD" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="container">
+    <p class="section-label">What you get</p>
+    <h2 class="section-title">Everything you need to watch IPTV</h2>
+    <p class="section-desc">Bring your own IPTV subscription — Genova handles the rest with a clean, fast, and intuitive experience.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">📺</div>
+        <h3>Live TV & EPG</h3>
+        <p>Browse thousands of channels with an integrated Electronic Program Guide. See what's on now and what's coming next.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎬</div>
+        <h3>VOD & Series</h3>
+        <p>Access your provider's full movie and TV series catalog, organized by category and searchable in real time.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔌</div>
+        <h3>Universal Compatibility</h3>
+        <p>Supports Xtream Codes, M3U, and M3U8 playlists. Add multiple providers and switch between them instantly.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔍</div>
+        <h3>Smart Search</h3>
+        <p>Find any channel, movie, or show in seconds across all your content and categories.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Privacy First</h3>
+        <p>Your playlists and settings stay on your device. No account required. No data collected.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">✨</div>
+        <h3>Beautiful Design</h3>
+        <p>Material Design 3 on Android, native look on Apple TV. Designed for every screen size, including 10-foot TV UI.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLATFORMS -->
+<section>
+  <div class="container">
+    <p class="section-label">Platforms</p>
+    <h2 class="section-title">Available now. More coming.</h2>
+    <p class="section-desc">Genova is being built as a true multiplatform app. Start on Android or Apple TV today.</p>
+    <div class="platforms-row">
+      <div class="platform-pill">📱 Android <span class="badge badge-live">Available</span></div>
+      <div class="platform-pill">📺 Apple TV (tvOS) <span class="badge badge-live">Available</span></div>
+      <div class="platform-pill">🍎 iPhone (iOS) <span class="badge badge-soon">Coming Soon</span></div>
+      <div class="platform-pill">💻 Desktop <span class="badge badge-soon">Coming Soon</span></div>
+      <div class="platform-pill">📺 Android TV <span class="badge badge-soon">Coming Soon</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- BETA CTA -->
+<section class="beta">
+  <div class="container">
+    <div class="beta-card">
+      <h2>Join the Beta Program 🚀</h2>
+      <p>Help shape Genova IPTV. Get early access to new features and give feedback that directly influences the product.</p>
+      <div class="beta-links">
+        <a href="https://play.google.com/store/apps/details?id=com.genova.player" class="btn-primary" target="_blank" rel="noopener">
+          Join from Android
+        </a>
+        <a href="https://play.google.com/apps/testing/com.genova.player" class="btn-secondary" target="_blank" rel="noopener">
+          Join from Web Browser
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="container">
+    <p class="section-label">FAQ</p>
+    <h2 class="section-title">Questions & Answers</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>Does Genova provide IPTV channels?</h3>
+        <p>No. Genova is a player only. You must bring your own legal IPTV source (Xtream Codes credentials or M3U/M3U8 playlist URL).</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is Genova free?</h3>
+        <p>Yes, completely free. All features are available at no cost, no subscription, no ads.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is my data private?</h3>
+        <p>Yes. Your playlists and settings are stored locally on your device only. We don't collect or transmit any personal data.</p>
+      </div>
+      <div class="faq-item">
+        <h3>I found a bug. Where do I report it?</h3>
+        <p>Open an issue on <a href="https://github.com/GenovaIPTV/genova-public/issues" style="color:var(--accent)">GitHub Issues</a> or post in our <a href="https://groups.google.com/g/genova-player" style="color:var(--accent)">Google Group community</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-links">
+    <a href="https://github.com/GenovaIPTV/genova-public/issues">Bug Reports</a>
+    <a href="https://groups.google.com/g/genova-player">Community</a>
+    <a href="privacy-policy">Privacy Policy</a>
+    <a href="https://play.google.com/apps/testing/com.genova.player">Beta Program</a>
+  </div>
+  <p>Made with ♥ by the Genova Team · Free forever · No data collected</p>
+</footer>
+
+</body>
+</html>
