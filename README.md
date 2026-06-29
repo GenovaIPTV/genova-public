@@ -19,7 +19,7 @@
 
 ## 🎬 What is Genova IPTV?
 
-**Genova IPTV** is a next-generation IPTV player designed for everyone. Enjoy your favorite TV channels, shows, and VOD content on any device, with a beautiful and intuitive interface. Genova is completely free to use.
+**Genova IPTV** is a next-generation IPTV player designed for everyone. Enjoy your favorite TV channels, shows, and VOD content on any device, with a beautiful and intuitive interface. Genova is currently free to use during the beta phase.
 
 ---
 
@@ -66,8 +66,8 @@ We value your input! Here's how you can help:
 
 ### Core Functionality
 - **Universal Compatibility**: Works with Xtream Codes, M3U/M3U8 playlists, and public IPTV sources
-- **Current Platforms**: Android and tvOS (Apple TV)
-- **Coming Soon**: iOS, macOS, Windows, Linux, Android TV
+- **Current Platforms**: Android
+- **Coming Soon**: tvOS (Apple TV), iOS, macOS, Windows, Linux, Android TV
 - **Live TV & EPG**: Browse channels with integrated Electronic Program Guide
 - **VOD & Series**: Browse movies and TV series with category organization
 - **Smart Search**: Real-time search across all content types
@@ -79,6 +79,15 @@ We value your input! Here's how you can help:
 - **Platform-Optimized Navigation**: Intuitive navigation tailored to each platform
 - **Category-Based Content**: Intelligent organization by categories for all content types
 - **Fullscreen Video Player**: High-quality playback for Live TV, VOD, and Series
+
+### 🚧 Current Limitations (Beta)
+
+As we are in the Beta phase, please note the following current limitations:
+- **Search**: The global search is currently very strict and requires exact word matches.
+- **Video Player**: We are actively stabilizing the video player. Picture-in-Picture (PiP) is currently disabled.
+- **Binge Watching**: The "Up Next" auto-play overlay currently triggers precisely at the end of the video.
+- **Continue Watching**: Playback history is saved immediately upon viewing, rather than after a few seconds of engagement.
+- **Adaptive UI**: We are in the process of redesigning our multi-platform layouts to better suit specific devices.
 
 ---
 
@@ -103,7 +112,7 @@ We value your input! Here's how you can help:
 > No. Genova is a player only. You must provide your own legal IPTV sources (Xtream, M3U, etc.).
 
 **Q: Is Genova free?**
-> Yes! Genova is completely free to use. All features are available without any cost.
+> Genova is completely free during the beta phase. A pricing model (such as a freemium plan with premium features) is being considered for when the application becomes stable in production.
 
 **Q: Is my data private?**
 > Yes. Your playlists and settings are stored locally on your device. We don't collect or transmit your data.

@@ -6,6 +6,9 @@
   <title>Genova IPTV — Free Universal IPTV Player</title>
   <meta name="description" content="Genova IPTV is a free, beautiful IPTV player for Android and Apple TV. Watch Live TV, movies, and series from your own IPTV provider." />
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/GenovaIPTV/genova-public/main/assets/genova-logo.svg" />
+
   <!-- Open Graph / Social Sharing -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://genovaiptv.github.io/genova-public/" />
@@ -153,6 +156,33 @@
     .feature-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
     .feature-card p { color: var(--muted); font-size: .9rem; }
 
+    /* ROADMAP */
+    .roadmap { background: var(--bg); }
+    .roadmap-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px; margin-top: 40px;
+    }
+    .roadmap-card {
+      background: var(--surface2); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 24px;
+      display: flex; flex-direction: column; gap: 12px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .roadmap-card:hover { transform: translateY(-4px); border-color: var(--accent); }
+    .roadmap-card.in-progress { border-left: 4px solid #ffbc42; }
+    .roadmap-card.planned { border-left: 4px solid var(--accent); }
+    .roadmap-card.issue { border-left: 4px solid var(--accent2); }
+    
+    .roadmap-header { display: flex; align-items: center; justify-content: space-between; }
+    .roadmap-header h3 { font-size: 1.1rem; font-weight: 700; margin: 0; }
+    .status-badge {
+      font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.05em;
+    }
+    .status-in-progress { background: rgba(255, 188, 66, 0.15); color: #ffbc42; }
+    .status-planned { background: rgba(108, 99, 255, 0.15); color: #c4c0ff; }
+    .status-issue { background: rgba(255, 101, 132, 0.15); color: var(--accent2); }
+    .roadmap-card p { color: var(--muted); font-size: 0.95rem; margin: 0; }
+
     /* PLATFORMS */
     .platforms-row { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 40px; }
     .platform-pill {
@@ -215,16 +245,22 @@
     <img src="https://raw.githubusercontent.com/GenovaIPTV/genova-public/main/assets/genova-logo.svg" alt="Genova" />
     Genova IPTV
   </a>
-  <a href="https://play.google.com/apps/testing/com.genova.player" class="nav-cta" target="_blank" rel="noopener">
-    ▶ Join Beta
-  </a>
+  <div style="display: flex; gap: 16px; align-items: center;">
+    <a href="https://github.com/GenovaIPTV/genova-public" target="_blank" rel="noopener" style="color: var(--text); display: flex; align-items: center; gap: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 600; opacity: 0.8; transition: opacity 0.2s;">
+      <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+      GitHub
+    </a>
+    <a href="https://play.google.com/apps/testing/com.genova.player" class="nav-cta" target="_blank" rel="noopener">
+      ▶ Join Beta (Android)
+    </a>
+  </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-badge">✦ Free & Open Beta</div>
   <h1>Your IPTV.<br>Beautiful. Everywhere.</h1>
-  <p>Watch live TV, movies, and series from your own IPTV provider. Available on Android and Apple TV — completely free.</p>
+  <p>Watch live TV, movies, and series from your own IPTV provider. Available on Android (Apple TV coming soon) — currently free during beta.</p>
   <div class="hero-actions">
     <a href="https://play.google.com/apps/testing/com.genova.player" class="btn-primary" target="_blank" rel="noopener">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.5c.42.24.91.26 1.35.05L17.82 12 4.53.45c-.44-.21-.93-.19-1.35.05C2.73.74 2.5 1.32 2.5 2v20c0 .68.23 1.26.68 1.5z"/></svg>
@@ -243,7 +279,7 @@
       <img src="assets/screenshot-phone-2.png" alt="Genova IPTV - Home" loading="lazy" />
     </div>
     <div class="screenshot-card">
-      <img src="assets/screenshot-phone-1.png" alt="Genova IPTV - VOD" loading="lazy" />
+      <img src="assets/screenshot-phone-3.png" alt="Genova IPTV - VOD" loading="lazy" />
     </div>
   </div>
 </section>
@@ -289,15 +325,75 @@
   </div>
 </section>
 
+<!-- ROADMAP & LIMITATIONS -->
+<section class="roadmap">
+  <div class="container">
+    <p class="section-label">Roadmap & Beta Status</p>
+    <h2 class="section-title">What we're working on</h2>
+    <p class="section-desc">Genova is in active development. Here's a transparent look at known limitations, ongoing fixes, and upcoming features.</p>
+    <div class="roadmap-grid">
+      
+      <div class="roadmap-card issue">
+        <div class="roadmap-header">
+          <h3>Strict Search Engine</h3>
+          <span class="status-badge status-issue">Fixing</span>
+        </div>
+        <p>The global search currently requires exact word matches. "One Piece FR" won't find "One Piece". We're working on a more flexible search algorithm.</p>
+      </div>
+
+      <div class="roadmap-card issue">
+        <div class="roadmap-header">
+          <h3>Video Player & PiP</h3>
+          <span class="status-badge status-issue">Fixing</span>
+        </div>
+        <p>Media3 & VLC are being stabilized. Some audio codecs are missing and Picture-in-Picture (PiP) is currently disabled due to a regression.</p>
+      </div>
+      
+      <div class="roadmap-card issue">
+        <div class="roadmap-header">
+          <h3>Watch Progress Triggers</h3>
+          <span class="status-badge status-issue">Fixing</span>
+        </div>
+        <p>The "Up Next" auto-play triggers exactly at the video's end instead of shortly before. Continue Watching saves too early. Both are being adjusted.</p>
+      </div>
+
+      <div class="roadmap-card in-progress">
+        <div class="roadmap-header">
+          <h3>Adaptive UI Redesign</h3>
+          <span class="status-badge status-in-progress">In Progress</span>
+        </div>
+        <p>We are completely redesigning the adaptive layouts for better platform-specific ergonomics (mobile vs. tablet vs. TV screens).</p>
+      </div>
+
+      <div class="roadmap-card planned">
+        <div class="roadmap-header">
+          <h3>"For You" Dashboard</h3>
+          <span class="status-badge status-planned">Planned</span>
+        </div>
+        <p>A new dedicated Home tab featuring personalized recommendations, newly added content, and your Continue Watching queue.</p>
+      </div>
+
+      <div class="roadmap-card planned">
+        <div class="roadmap-header">
+          <h3>Desktop & iOS Support</h3>
+          <span class="status-badge status-planned">Planned</span>
+        </div>
+        <p>Bringing the Genova experience to macOS, Windows, Linux, and iPhone natively in upcoming releases.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- PLATFORMS -->
 <section>
   <div class="container">
     <p class="section-label">Platforms</p>
     <h2 class="section-title">Available now. More coming.</h2>
-    <p class="section-desc">Genova is being built as a true multiplatform app. Start on Android or Apple TV today.</p>
+    <p class="section-desc">Genova is being built as a true multiplatform app. Start on Android today.</p>
     <div class="platforms-row">
       <div class="platform-pill">📱 Android <span class="badge badge-live">Available</span></div>
-      <div class="platform-pill">📺 Apple TV (tvOS) <span class="badge badge-live">Available</span></div>
+      <div class="platform-pill">📺 Apple TV (tvOS) <span class="badge badge-soon">Coming Soon</span></div>
       <div class="platform-pill">🍎 iPhone (iOS) <span class="badge badge-soon">Coming Soon</span></div>
       <div class="platform-pill">💻 Desktop <span class="badge badge-soon">Coming Soon</span></div>
       <div class="platform-pill">📺 Android TV <span class="badge badge-soon">Coming Soon</span></div>
@@ -335,7 +431,7 @@
       </div>
       <div class="faq-item">
         <h3>Is Genova free?</h3>
-        <p>Yes, completely free. All features are available at no cost, no subscription, no ads.</p>
+        <p>Genova is completely free during the beta phase. A pricing model (such as a freemium plan) is being considered for when the application becomes stable in production.</p>
       </div>
       <div class="faq-item">
         <h3>Is my data private?</h3>
@@ -352,6 +448,7 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-links">
+    <a href="https://github.com/GenovaIPTV/genova-public">GitHub Repo</a>
     <a href="https://github.com/GenovaIPTV/genova-public/issues">Bug Reports</a>
     <a href="https://groups.google.com/g/genova-player">Community</a>
     <a href="privacy-policy">Privacy Policy</a>
