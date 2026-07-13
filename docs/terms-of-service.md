@@ -14,7 +14,7 @@ By downloading, installing, or using Genova, you agree to be bound by these Term
 
 ## 1. Service Description
 
-Genova is a free, open-source IPTV **player**. It lets you connect your own IPTV sources — Xtream Codes credentials or M3U/M3U8 playlist URLs — and organizes, caches, and plays the content those sources provide (live channels, video on demand, and series).
+Genova is an IPTV **player**, currently free during its beta phase. It lets you connect your own IPTV sources — Xtream Codes credentials or M3U/M3U8 playlist URLs — and organizes, caches, and plays the content those sources provide (live channels, video on demand, and series). Pricing may change once the app leaves beta; any change will be announced in the app and on this page.
 
 Genova does not include, bundle, sell, or endorse any IPTV content, channel list, or provider subscription. You supply your own sources.
 
@@ -45,14 +45,14 @@ Genova does not include, bundle, sell, or endorse any IPTV content, channel list
 You agree not to use Genova to:
 
 - Access content you do not have a legal right to access.
-- Attempt to reverse-engineer, disrupt, or interfere with the app's operation beyond what open-source licensing permits.
+- Attempt to reverse-engineer, decompile, redistribute, or otherwise circumvent the app's proprietary software.
 - Violate any applicable law or the terms of any third-party IPTV service you connect.
 
 ---
 
 ## 5. Intellectual Property
 
-Genova's application code is open source; see the [GitHub repository](https://github.com/GenovaIPTV/genova-public) for license details of the app itself and its third-party components. Genova claims no ownership of, and grants no rights to, any content streamed through third-party IPTV sources.
+Genova's application code is proprietary and is not publicly available; the [GitHub repository](https://github.com/GenovaIPTV/genova-public) hosts our public-facing documentation and issue tracker, not the app's source code. We welcome user suggestions and feedback through our community channels, but contributing feedback does not grant you any rights to the app's code. Genova claims no ownership of, and grants no rights to, any content streamed through third-party IPTV sources. Third-party open-source components used within Genova remain governed by their own licenses.
 
 ---
 
