@@ -14,7 +14,9 @@ By downloading, installing, or using Genova, you agree to be bound by these Term
 
 ## 1. Service Description
 
-Genova is an IPTV **player**, currently free during its beta phase. It lets you connect your own IPTV sources — Xtream Codes credentials or M3U/M3U8 playlist URLs — and organizes, caches, and plays the content those sources provide (live channels, video on demand, and series). Pricing may change once the app leaves beta; any change will be announced in the app and on this page.
+Genova is an IPTV **player**, currently free to use. It lets you connect your own IPTV sources — Xtream Codes credentials or M3U/M3U8 playlist URLs — and organizes, caches, and plays the content those sources provide (live channels, video on demand, and series). A paid model (such as a freemium plan with premium features) is under consideration; any pricing change will be announced in the app and on this page before it takes effect.
+
+Genova is distributed on Google Play through two channels: a stable production release and an optional public beta. Beta builds are pre-release software and may be less stable; participation is voluntary and you may leave the beta channel at any time.
 
 Genova does not include, bundle, sell, or endorse any IPTV content, channel list, or provider subscription. You supply your own sources.
 
@@ -83,7 +85,7 @@ Continued use of the app after a change becomes effective constitutes acceptance
 
 If you have questions about these Terms, please contact us:
 
-- **Community Forum**: [Google Group](https://groups.google.com/g/genova-player)
+- **Questions & Community**: [GitHub Discussions](https://github.com/GenovaIPTV/genova-public/discussions)
 - **Bug Reports**: [GitHub Issues](https://github.com/GenovaIPTV/genova-public/issues)
 
 ---

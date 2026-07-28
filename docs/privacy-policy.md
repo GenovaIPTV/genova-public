@@ -1,6 +1,6 @@
 # Privacy Policy – Genova IPTV
 
-**Last Updated:** December 2024
+**Last Updated:** July 2026
 
 ---
 
@@ -80,7 +80,9 @@ You have the following rights regarding your data:
 - **Data Export**: Export your playlists and settings (when technically feasible).
 - **Correction**: Correct inaccurate information.
 
-To exercise these rights, contact us on our [Google Group](https://groups.google.com/g/genova-player).
+To exercise these rights, open a request in [GitHub Discussions (Q&A)](https://github.com/GenovaIPTV/genova-public/discussions/categories/q-a).
+Please note that GitHub Discussions is a public forum — do not post credentials, provider details, or any other private
+information in your request.
 
 ---
 
@@ -115,7 +117,7 @@ You are advised to review this Privacy Policy periodically for any changes.
 
 If you have any questions about this Privacy Policy or our data practices, please contact us:
 
-- **Community Forum**: [Google Group](https://groups.google.com/g/genova-player)
+- **Questions & Community**: [GitHub Discussions](https://github.com/GenovaIPTV/genova-public/discussions)
 - **User Documentation**: [genova-public](https://github.com/GenovaIPTV/genova-public)
 
 ---
