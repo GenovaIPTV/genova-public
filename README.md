@@ -102,7 +102,7 @@ Genova is under active development. Please note the following current limitation
 > Yes, Genova is free to use. A pricing model (such as a freemium plan with premium features) is being considered for the future; any change will be announced in the app and in our Terms of Service beforehand.
 
 **Q: Is my data private?**
-> Yes. Your playlists and settings are stored locally on your device. We don't collect or transmit your data.
+> Yes. Your playlists, credentials and settings are stored locally on your device and never sent to us. The app only sends pseudonymous usage statistics and crash reports to help us improve it; see the [Privacy Policy](https://mainthreadapps.com/genovaiptv/privacy-policy).
 
 **Q: What is the difference between the stable release and the public beta?**
 > Both come from Google Play. The stable release is the tested build everyone gets by default. The public beta ships the same builds earlier, so you see new features first and may hit rough edges. Opting in and out is free and reversible.
