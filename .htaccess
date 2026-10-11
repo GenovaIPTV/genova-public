@@ -1,0 +1,30 @@
+# Served by OVH shared hosting (Apache). Keep every directive behind IfModule so a missing module cannot cause a 500.
+
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # One canonical origin: HTTPS on the bare domain
+  RewriteCond %{HTTPS} !=on [OR]
+  RewriteCond %{HTTP_HOST} ^www\. [NC]
+  RewriteRule ^ https://mainthreadapps.com%{REQUEST_URI} [L,R=301]
+
+  # Never serve dotfiles or the git metadata (except /.well-known)
+  RewriteRule (^|/)\.(?!well-known/) - [L,R=404]
+
+  # Repository files that are not part of the website
+  RewriteRule ^(README\.md|assets|docs)(/|$) - [L,R=404]
+
+  # No company homepage yet: send the root to the Genova site
+  RewriteRule ^$ /genovaiptv/ [L,R=302]
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+  Header always set Content-Security-Policy "default-src 'none'; img-src 'self' data:; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; frame-ancestors 'self'"
+</IfModule>
