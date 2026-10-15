@@ -119,6 +119,16 @@ Genova is under active development. Please note the following current limitation
 
 ---
 
+## 🙏 Credits
+
+Series artwork and episode details come from [TMDB](https://www.themoviedb.org) and [TheTVDB](https://thetvdb.com). Genova is not endorsed or certified by TMDB or TheTVDB.
+
+<a href="https://www.themoviedb.org"><img src="assets/tmdb-logo.svg" alt="TMDB" height="20"></a>
+&nbsp;&nbsp;
+<a href="https://thetvdb.com"><img src="assets/tvdb-logo.png" alt="TheTVDB" height="36"></a>
+
+---
+
 <div align="center">
   Made with ❤️ by the Genova Team
 </div>
