@@ -17,7 +17,7 @@ Options -Indexes
   RewriteRule ^(README\.md|assets|docs)(/|$) - [L,R=404]
 
   # No company homepage yet: send the root to the Genova site
-  RewriteRule ^$ /genovaiptv/ [L,R=302]
+  RewriteRule ^$ /genovaiptv/ [L,R=301]
 </IfModule>
 
 <IfModule mod_headers.c>
