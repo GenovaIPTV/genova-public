@@ -22,6 +22,606 @@
 <h1>Changelog</h1>
 <p>All notable changes to this project will be documented in this file. See <a href="https://www.conventionalcommits.org/">conventional commits</a> for commit guidelines.</p>
 <hr />
+<h2>0.16.32 - 2026-10-31</h2>
+<h4>Bug Fixes</h4>
+<ul>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/5c59c56ce477ca0d7ea85118bda4aa299b79291b">5c59c56</a>] (<strong>release</strong>) authenticate claude with CI token - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/0b6baba2d2e2cce19027c662983adc65ce8a720e">0b6baba</a>] (<strong>onboarding</strong>) free phone landscape form under keyboard - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/afbfc3db99538f77d847e9a767dbed396c9d4db6">afbfc3d</a>] (<strong>build</strong>) raise Kotlin daemon heap to 8g - Claude</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/db5be555b60e1dbc9e5000dc803ed28056e6f4c6">db5be55</a>] (<strong>discovery</strong>) keep adult movies out of promotions - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/45199f3f7f20bcb5e37f04eed08ca80e4a23402a">45199f3</a>] (<strong>qa</strong>) fail matrix when no clip request arrives - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/85f15d85d6b188164f3ec79412e5fd7c4b152e2b">85f15d8</a>] (<strong>epg</strong>) use kotlin.time.Instant in sync test - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/bbaebe642361dc4839524f2a1c5e1c2d28e489df">bbaebe6</a>] (<strong>build</strong>) opt in to UnstableApi in ffmpeg video renderer - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/76fcd5b3ee1e210351575b42686f6f1728c9dbff">76fcd5b</a>] (<strong>build</strong>) green unit tests after dep bump - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/677c99bfd7f0beb39704e51f81c81790233fca48">677c99b</a>] (<strong>resources</strong>) give not-found, unavailable and invalid content a reason - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/939af50c24664df51d9f36c6554fcd68f69ba9fa">939af50</a>] (<strong>player</strong>) keep the channel layout of the audio track on switch - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/3d4702b78364af035ec66e9fbe365ae3720a7f86">3d4702b</a>] (<strong>settings</strong>) show localized reasons for provider failures - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/c77ed2efe422e4cdd64ed12b85e59d94b85bb51f">c77ed2e</a>] (<strong>user-data</strong>) log a failed audio language preference read - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/0f3e2219c03b5d9d91540e824353829c353178ca">0f3e221</a>] (<strong>telemetry</strong>) drop the redundant startup outcome attribute - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/a2b0cdc539b10fb667ecf87baa440f3889b60f14">a2b0cdc</a>] (<strong>ci</strong>) drop the stale Watch Next known-failure waiver - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/01d5f81f3f15e518cc649896f87b9354f58def22">01d5f81</a>] (<strong>phone</strong>) fail release builds without a PostHog key - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/0851ab7c4bbb8bcca461bf2a452f7bdf02aa6757">0851ab7</a>] (<strong>build</strong>) fail on a blank or non-numeric build number - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/0a4cd23277778794987b2c89e517e21bfde16573">0a4cd23</a>] (<strong>paywall</strong>) clear a refused playback when the gate closes - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/81ce03826ac760e3a28c846b84b5eb5ebf2aeab7">81ce038</a>] (<strong>settings</strong>) label the installation id row UUID - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/13ba4a619544bf2dd176494123998577fff0f1ed">13ba4a6</a>] (<strong>player</strong>) resume playback after the paywall closes - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/e6d314a32def164e7816c19f5357cf99e254a946">e6d314a</a>] (<strong>sync</strong>) fail a cycle where every provider failed - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/e2ad3fbea35dc3d31552e922aba983ef08bf3320">e2ad3fb</a>] (<strong>epg</strong>) treat a blocked guide as unavailable - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/f17249d83ba2146e5d75f4f0f25ef96a7b1476ed">f17249d</a>] (<strong>catalog</strong>) resolve genre labels in composition - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/1cb9e637700e5bd833c4b90e42e8f89301b9c0bb">1cb9e63</a>] (<strong>onboarding</strong>) inline the fast-connect no-op slots - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/b8e23ff363697eb401bec20d0da4a2705e8f1cea">b8e23ff</a>] (<strong>release</strong>) drop session minimum from version health - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/da733a3fdc36409d973d4c515829e439004f67e5">da733a3</a>] (<strong>player</strong>) end Media3 session with playback - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/aca7b3be9505645a2f3151e20980dfd474466dfd">aca7b3b</a>] (<strong>home-tv</strong>) count favourite channels as history - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/5312cb7b81f943030bdded3c88260a5d7303af11">5312cb7</a>] (<strong>home</strong>) refresh catalog rows after each sync - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/99a2303f7fb9eea4518531ae260569b9c0f7ecb6">99a2303</a>] (<strong>favorites</strong>) observe favourite rows reactively - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/71e15e7a42304b23e00040e374306c681f45bbeb">71e15e7</a>] (<strong>catalog</strong>) give titles without a usable TMDB id their own key - Alexis Burgos</p>
+</li>
+</ul>
+<h4>Build System</h4>
+<ul>
+<li>[<a href="https://github.com/GenovaIPTV/Genova/commit/e4c3aad67a619d511119903fc280f88d03300241">e4c3aad</a>] (<strong>compose</strong>) share skiko desktop test runtime - Alexis Burgos</li>
+</ul>
+<h4>CI</h4>
+<ul>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/3503ed6ef8dca64bfd9a34fa2958c0d360221c63">3503ed6</a>] one CI workflow, graph guard in Gradle - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/89ac8059859179bbab7a73656d790c9150b13018">89ac805</a>] (<strong>nightly</strong>) keep run artifacts for dry runs only - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/67de764808da3db73d6e736e77f8826bcf3eeea2">67de764</a>] (<strong>nightly</strong>) test, build and publish in one run - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/db8f40a35786d3b1e5eccf127a45450c02f22973">db8f40a</a>] (<strong>train</strong>) retire the promotion crons - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/03619fabec2d2fdcffbb8a9d63bba3a2716f32c6">03619fa</a>] remove dead workflows and local Gradle gate - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/4040215624cd35086aed795d53d6d99e3a857f7a">4040215</a>] (<strong>quality</strong>) skip push runs for notes only - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/b7ffb9222266f4c9894499976191b9d3f22ebf67">b7ffb92</a>] (<strong>release</strong>) generate notes in the pipeline - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/fe4ab31523863808613749d5840a982d50e91910">fe4ab31</a>] (<strong>docs</strong>) drift-check the vod-series wireframes - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/e0482a417c008be8e4b7b1b7cef36b0778a9b268">e0482a4</a>] (<strong>halt</strong>) pass halt inputs through env in verify step - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/59873cd724aca2c2c765fa64f5ed046528cc59b6">59873cd</a>] (<strong>monitor</strong>) run the production crash monitor hourly - Alexis Burgos</p>
+</li>
+</ul>
+<h4>Chores</h4>
+<ul>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/22baeed4e9b0b1df2d637efad893c43147ab0101">22baeed</a>] (<strong>hooks</strong>) fix the docs-only skip message - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/aa7a36092d8739bbf85578e5a1b89d3477c2a6b8">aa7a360</a>] (<strong>onboarding</strong>) drop traceability ids from comments - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/96eaf809401045b860c544801de9035ed50df813">96eaf80</a>] (<strong>debug</strong>) let the sync trigger clear stored validators - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/f9cdfedbbd417d932ce97d8e78e8b5b0e358739c">f9cdfed</a>] (<strong>debug</strong>) add a forced sync trigger for the debug build - Alexis Burgos</p>
+</li>
+</ul>
+<h4>Code Refactoring</h4>
+<ul>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/fbe1a0a8b2e22a1ce28712c19cdcdc6bd7e83030">fbe1a0a</a>] (<strong>vod</strong>) drop unused sorted page queries - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/4b0948d502ca55edcfa131ce674ceadf098278d9">4b0948d</a>] (<strong>player</strong>) drop the software audio decoder kill switch - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/b78eb816bd536f53d66b5c7b3c28aea4c20b335a">b78eb81</a>] (<strong>deeplink</strong>) move deep link dispatch into DeepLinkDispatcher - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/be55a3460f680a7f4952c6f0609c8d9a9ee1aeb4">be55a34</a>] (<strong>onboarding</strong>) supply fast connect from the TV shell only - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/f7bac6cde5be5ebe8c4aaa52fb5937bb9535a095">f7bac6c</a>] (<strong>home</strong>) size the TV hero by the caller - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/9f8c7836f9f57275d5940a400daa754b7c20d2b9">9f8c783</a>] (<strong>series</strong>) drop unused paging members and their plumbing - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/0bdd2aabd548f6836ebe9d8fd71d2cf0d8e9f3b0">0bdd2aa</a>] (<strong>onboarding</strong>) drop the unused locale tag and controller - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/69462b33cd16c2d7ebf74754b242c6591dcecd26">69462b3</a>] (<strong>theme</strong>) drop the unused useDarkTheme parameter - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/2d2decdba95da95c10301714c677a8af0675f472">2d2decd</a>] (<strong>live</strong>) reuse the shared clock label formatter - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/1ed6636ecaf1aafce5be0ca5c4815045c7bab9df">1ed6636</a>] (<strong>settings</strong>) drop test-only operation error flag - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/e0940a6ee223e986d53c6f02302594db8a5a307f">e0940a6</a>] (<strong>shell</strong>) drop unused Koin HTTP engine properties - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/5645bec996a22a2b072a0ecff6f04f87f0379d7d">5645bec</a>] (<strong>design</strong>) drop unused TV rail tokens - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/352c4e1247142f87e00c0a5fcb95426a2f3359b4">352c4e1</a>] (<strong>design</strong>) drop unused RemoteImage sizeHint - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/d461d01ca3254cbc44b16fa7ae67afee5144221c">d461d01</a>] (<strong>series</strong>) drop unused detail hero tokens - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/e750cec9d5249ad3e869b821c9be4a829ca92cac">e750cec</a>] (<strong>channels</strong>) make sync writer internal - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/73ca058d318b2a00f2f80be1f88a38ab4cacb70d">73ca058</a>] (<strong>ci</strong>) trim release-ios header; close 3.6 - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/81faf33472ba818076090c4ee745ba680c003288">81faf33</a>] (<strong>home</strong>) drop the guide button from Home - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/9285a4d405588ac2c6b029a599d51821d4c7af00">9285a4d</a>] (<strong>home</strong>) remove the manual sync from the dashboard - Alexis Burgos</p>
+</li>
+</ul>
+<h4>Documentation</h4>
+<ul>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/60d75d989fe651884b251e88d88de8ba402d0bc1">60d75d9</a>] (<strong>ci</strong>) record the CI/CD simplification audit - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/13a622a2e1d139fab06751e8e1af79fb81551e89">13a622a</a>] (<strong>tickets</strong>) refresh dashboard - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/6a0d37b367bc68b4985efafb9fe7c4eb5514da97">6a0d37b</a>] (<strong>tickets</strong>) join deferred-work plans to entries - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/0598f74142695d20705b9f9fefe6453917a24108">0598f74</a>] (<strong>release</strong>) describe automatic notes - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/0ff80dd23768b6c4795e104925eaa3661e2ce23c">0ff80dd</a>] (<strong>tickets</strong>) close live filter keys store - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/925ce005c063569a0ff218620fcac32ea63a0a87">925ce00</a>] (<strong>plan</strong>) rule renamed and demo category keys - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/65692168db416680874d45c46e0da81c645cc9b7">6569216</a>] (<strong>plan</strong>) live filter keys stored at sync - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/30077d945797cb1bc5c20f6f1b5eda5bce55377f">30077d9</a>] (<strong>tickets</strong>) join the 9.5 plan to its entry - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/68e651dfa30350d4e3dfd380c34ad266bf104cf2">68e651d</a>] (<strong>release</strong>) prepare 0.16.32 release notes - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/9c262e2b3d4a43fc5d99ddb4f354654b658acda2">9c262e2</a>] (<strong>tickets</strong>) close onboarding refactor sweep - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/1caf4d2f6a7366f3cf45686bdeb435cdf3e5d762">1caf4d2</a>] (<strong>tickets</strong>) close landscape keyboard form - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/6050c486c77fc00e6c74ab7348e7c36ca24690b7">6050c48</a>] (<strong>tickets</strong>) close onboarding replay - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/165031221fa29e299e008c5e7d85c02fc7bc6ce0">1650312</a>] (<strong>deferred</strong>) log TV error focus ring - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/b8a7507186c651ff34dbb92ffd61452e275014e6">b8a7507</a>] (<strong>fidelity</strong>) TV guide field border ruled - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/b4a7d5dbe14a7759f89e30a6099b2ffe13567006">b4a7d5d</a>] (<strong>fidelity</strong>) tablet success halo ruled - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/443ccda25aea33e65070c07f029baded4417e4ce">443ccda</a>] (<strong>ux</strong>) center phone onboarding error frame - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/4896b50d7c8c5d1179d6cf979995ce6af7ec0862">4896b50</a>] (<strong>deferred</strong>) log phone landscape step bar - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/d9751945ad0fb5240272972ea0c59a145c9af269">d975194</a>] (<strong>deferred</strong>) log phone step counter flicker - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/12a5714e70194f1094576fce6c5b1f838ecd79c2">12a5714</a>] (<strong>tickets</strong>) widen phone landscape form ticket - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/affb9baa2f3a5c0199f32a1fd568f91c3dd6cf40">affb9ba</a>] (<strong>tickets</strong>) add phone landscape form keyboard - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/ab500b63c9119e379f3ae98dea4b39345f95c889">ab500b6</a>] (<strong>kb</strong>) adult content follows its category - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/f0a637320796134205bd96f38c25dfd8a60c1681">f0a6373</a>] (<strong>fidelity</strong>) retire onboarding deviations - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/acfa10a4f5b947c3008914e48af345d8fbedb2e8">acfa10a</a>] (<strong>tickets</strong>) close TV guide keyboard - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/52f98c1a729d1cf7590f68ed56f4dbbb3c4bc100">52f98c1</a>] (<strong>tickets</strong>) close tablet onboarding frames - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/8c25f36ed7c632bc35855c5d1488b9bba9758929">8c25f36</a>] (<strong>qa</strong>) point the checklist to the matrix CSV - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/5a7253c6ad42d6b5168ac452203c40b68d1fd4f6">5a7253c</a>] (<strong>tickets</strong>) close format checklist story - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/bac9dd2d3bd6e4fd40bcd74e835c9448312a3422">bac9dd2</a>] (<strong>tickets</strong>) close always-on audio decoder story - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/d13a42b594ce3430955ac38f2168e7efea9d96f6">d13a42b</a>] (<strong>tickets</strong>) close phone onboarding frames - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/dd495cbfbb59f9a181e75129b67534ce875ab0dd">dd495cb</a>] (<strong>tickets</strong>) plan kill switch removal and hw decoding setting - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/834849d729005781254d741b047b63589b56d9a6">834849d</a>] (<strong>decision</strong>) rule on ffmpeg kill switch and hw decoding - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/107ff5eb1296862a43279ed7c780f3d8e88b827f">107ff5e</a>] (<strong>ux</strong>) redraw phone and tablet onboarding mockups - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/14d8642997cb1f34c122eabbf2c6601c0382ceca">14d8642</a>] (<strong>tickets</strong>) close four built deferred-work stories - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/699606f1652da6536c4121f03ba68f39beecb85b">699606f</a>] (<strong>qa</strong>) tick TV video codecs in format checklist - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/f6f29e7df35163561a0f10397b9c398d687179ff">f6f29e7</a>] (<strong>qa</strong>) complete format checklist dependency table - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/c3e663a189cc4e71c55c54e369f18cc5be0847ab">c3e663a</a>] (<strong>decision</strong>) note on hardware decoding and ffmpeg - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/2d7f0f0094643efe5db8bdd798c5012486f080a2">2d7f0f0</a>] (<strong>qa</strong>) tick TV audio formats heard on SHIELD - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/c5fb7d0ea75909117319120639e7923ac0b75fbd">c5fb7d0</a>] (<strong>qa</strong>) make Media3 the Android player in checklist - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/17568a67c3e9d511d8d4f4a293eb92add703ebda">17568a6</a>] (<strong>deferred-work</strong>) re-verify the home empty-catalogue state - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/597176ec44aa939fe5ad1d6abf7dc240218d4134">597176e</a>] (<strong>deferred-work</strong>) correct the 9.5 baseline revision - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/c1a37642c6f20961b28a7a1699c6c6e3fcd9fa1f">c1a3764</a>] (<strong>deferred-work</strong>) restore the guide skipped-count plan - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/55dc9c6c97c83ba76c8a5bedd394142ed8fba7b5">55dc9c6</a>] (<strong>deferred-work</strong>) close the guide skipped-count story - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/30869f1173015fbbce7b44d9bebc14cec0af073c">30869f1</a>] (<strong>deferred-work</strong>) close the deep link dispatch story - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/d3a166fe7cb2a85f3aba128118ee5f691af60801">d3a166f</a>] (<strong>agents</strong>) add delegation and autonomy rules - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/839e8d1c7bd77045a656a98d6a0caa9ad68c45de">839e8d1</a>] (<strong>deferred-work</strong>) close the first-visit wording story - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/e7ff5657f82372c2b3ece88fe41f2500c30f380f">e7ff565</a>] (<strong>home</strong>) drop the removed first-visit message from the journey - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/162b57bba9a88ff6050156afe7b8bb3602829453">162b57b</a>] (<strong>deferred-work</strong>) close the audio preference log story - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/97a44619c25153a4c34aae291ce85acea8eaf4a9">97a4461</a>] (<strong>deferred-work</strong>) close the user agent story - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/fbe3700b06126307c6d382c8e34f08da75154820">fbe3700</a>] (<strong>deferred-work</strong>) block the vod-series wireframe test story - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/16bd5964733925169c3e892a89397afede7ca2e3">16bd596</a>] (<strong>deferred-work</strong>) close the favorite toggle plan story - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/d94d4a16e58d76074dcd9222cbb1ea0f3a73df44">d94d4a1</a>] (<strong>analytics</strong>) document the favorite toggle attribute and failure - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/9532ae6f6a050ffbc5847e1853cc1ec3c80eb7e7">9532ae6</a>] (<strong>deferred-work</strong>) close the startup outcome story - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/7b57a7ec80583a7b67f0e1258088a13d923721f6">7b57a7e</a>] (<strong>deferred-work</strong>) close the Watch Next waiver story - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/d850044487843ee42bf85bea70a8bc1cf35a178a">d850044</a>] (<strong>deferred-work</strong>) close the halt inputs story - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/7a3dd10a70d88ca00904e2983bb9681605815937">7a3dd10</a>] (<strong>deferred-work</strong>) close the PostHog key story - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/1c01698e9e4febe726b6e53ee0cae6b633df2e65">1c01698</a>] (<strong>deferred-work</strong>) close the build number story - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/10c665bf9b60806f33ecbf727019ea6fbcbd7133">10c665b</a>] (<strong>tech-debt</strong>) close the time-determinism rule story - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/46f4e7a2be2cf71c4155d7e33ff1a7d10f70b52e">46f4e7a</a>] (<strong>tech-debt</strong>) record the time-determinism rule run - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/18e87716b4f425a3e6a302cb5c22dc2c8100fff8">18e8771</a>] (<strong>tech-debt</strong>) draft the time-determinism rule plan - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/dfb7caee2254992c7de74733bbdda69824a7262e">dfb7cae</a>] (<strong>tech-debt</strong>) close the three-zone test run - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/05b06039925e79789b037bf36425095a5401edb6">05b0603</a>] (<strong>tech-debt</strong>) record the three-zone test run - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/49a2d70e7a9e43ad6d51bd9f402663c14fda8b76">49a2d70</a>] (<strong>tickets</strong>) close the title before paywall story - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/4c97cd6c311efed73692ce5d57cdd45aa51e8527">4c97cd6</a>] (<strong>tickets</strong>) close the published paywall story - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/d74d308ecc3793d4243059a5d2b62c5ffc27aa50">d74d308</a>] (<strong>tickets</strong>) reopen the paywall stories until device replay - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/f192b9b2c6a77eb6f235ccfe9f03f24b4449d382">f192b9b</a>] (<strong>tickets</strong>) close the paywall and subscription stories - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/00ddebb3b6253b90d2b7631fa2da4c3414b14b73">00ddebb</a>] (<strong>tickets</strong>) move epic-flag-freshness tickets into tickets/ - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/b5216aa28a2b63b0ca66bdce26c0db78e26cb020">b5216aa</a>] (<strong>tickets</strong>) checkpoint before ticket layout migration - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/f4ee16724e10904ff3951b2c6d39474f212e05da">f4ee167</a>] (<strong>tickets</strong>) close the guide skipped-count story - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/88a124978c0ea95fe5d9db9bb6a3dc0ea83396fc">88a1249</a>] (<strong>tickets</strong>) close the home empty-catalogue story - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/e4511263a4e1a3a95e6759f84e5598300a72a9a0">e451126</a>] (<strong>agents</strong>) announce epic and initiative per ticket - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/a80844b7b5db3b8f1afbb42229c174311f649a83">a80844b</a>] (<strong>tickets</strong>) close 3.13 and 3.5 - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/2a2d4876849e19fc24f8ac402f8bec1567607393">2a2d487</a>] (<strong>tickets</strong>) drop the per-pass refresh story - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/d2ec0bb1533a3e442ca8e48828d06b7ef44a988d">d2ec0bb</a>] (<strong>tickets</strong>) close the sync responsiveness spike - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/460a31bd6f3a9c379272d8af98c8c23c74d32bab">460a31b</a>] (<strong>tickets</strong>) record the first Perfetto trace of the sync - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/58977ad69781b6e9a605233f97514d245963baf8">58977ad</a>] (<strong>tickets</strong>) record the two-provider sync measurements - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/432b2a3fe640e390085c533d11d9f62452432ca1">432b2a3</a>] (<strong>tickets</strong>) record the playable-title sync measurement - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/0e25e0773a46c1af5d53963f744d163abf55f2e7">0e25e07</a>] (<strong>tickets</strong>) record the forced-sync control run - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/da1c20c0ee88f97136122cb405286a87f74680f0">da1c20c</a>] (<strong>tickets</strong>) record the first sync reproduction attempt - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/ae379eba230962b4ff5773b1f1de35927a62d0f7">ae379eb</a>] (<strong>tickets</strong>) record the end-of-stream history decision - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/e3e513b91c4268c06642d61ab3eba841cf5d01b6">e3e513b</a>] (<strong>tickets</strong>) close the shared content key story - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/8428a3d5f8492642e9b2cb9f17ca2b3c03728d3d">8428a3d</a>] (<strong>tickets</strong>) close the genre label story - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/eaaa19468512e31c6b19ae21fe015c51847eb2c0">eaaa194</a>] (<strong>tickets</strong>) record code-sobriety plan status - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/cf9bbf4ed52fbe7f6cc538a1fd3c35ba4b0aa38a">cf9bbf4</a>] (<strong>tickets</strong>) record ios refactor sweep plan - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/e76e0b66196e36c363f970ea8a669106f784906e">e76e0b6</a>] (<strong>tickets</strong>) close epic-android-delivery-train - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/2dce205dc0fc95d89e543c5dd242cb12b4fcd8fa">2dce205</a>] (<strong>channels</strong>) drop references to a deleted view model - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/41e176d72ce5d680a27d4dc8b7e5813081d199f0">41e176d</a>] (<strong>tickets</strong>) close 7 after staged promotion dry-runs - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/59ef7328006c4a3a07d50629dc4a8fee6be21f63">59ef732</a>] (<strong>app-tv</strong>) drop cited script from build comment - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/5db906143fb69785aff36c47eebb9bfae539645b">5db9061</a>] name existing modules; mark gap status done - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/381c4f3f7a201dfcdbf9e938739a43f6b4c93435">381c4f3</a>] (<strong>tickets</strong>) close 2.11 and drop cross-epic refs - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/e0186eb655c0089cb351a7c2e4ac4023d0c55a73">e0186eb</a>] (<strong>tickets</strong>) close scroll spike, skeleton done - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/547f27bd97a41eb3d5fefde70e7c3884100c02c8">547f27b</a>] (<strong>tickets</strong>) record the device check of the Live category skeleton - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/25d40b25a17b6bc5ad3aa58a41c78290864eb644">25d40b2</a>] (<strong>tickets</strong>) record the sync responsiveness findings - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/ef70ce23f549cdccd3dd1328a8ee69159db1e1c2">ef70ce2</a>] (<strong>tickets</strong>) scope the Live category story and add the listing rebuild - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/e51c9b73f83d7a4d23b38b739cea6779a54aaa01">e51c9b7</a>] (<strong>tickets</strong>) add the Live category debounce story - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/fbbd3c4663fe8d96a3a614396a49d8713a1f41d8">fbbd3c4</a>] (<strong>tickets</strong>) record the Live scroll measurements - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/620bf46e9f24fe0a3e10b5abdd09f4af58bc969c">620bf46</a>] (<strong>tickets</strong>) close the Home manual sync story - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/5656acbcd453632a0d3033a96bb9c443063e42d6">5656acb</a>] (<strong>tickets</strong>) refine the Live scroll spike - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/dc81b610ded51fa6e32e9e75e46dd6b17d93650a">dc81b61</a>] (<strong>tickets</strong>) record the review and device check of the identity fix - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/05aa1ee6d9869bb230a99ee8aa34f4db14b61b34">05aa1ee</a>] (<strong>tickets</strong>) refine the medium-priority bugs - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/d96d578e0ee99ab86c2ccc3e98364965a5688498">d96d578</a>] (<strong>tickets</strong>) add the flag freshness epic - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/4159d298c0f77f03b2e5e4f2bdf977a8eb6b49e1">4159d29</a>] (<strong>changelog</strong>) add 0.16.31 - github-actions[bot]</p>
+</li>
+</ul>
+<h4>Features</h4>
+<ul>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/782f2ac5ca8e9f7f0119721ba3daeb23e943b4b7">782f2ac</a>] (<strong>release</strong>) add the delivery train in shadow mode - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/dbf886b40113f70aefe2a95640de3b3bde12aa00">dbf886b</a>] (<strong>release</strong>) write notes with claude - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/d1d011f05d08e9ca20507a71667166b89d7782c9">d1d011f</a>] (<strong>live</strong>) live filter keys follow renames and demo - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/23d3179677f2f22347a4349de57cd1de6e2cc2b6">23d3179</a>] (<strong>live</strong>) store live filter keys at sync - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/662f67d53adf887f24daa424d24ff5cf582fbf62">662f67d</a>] (<strong>todo-board</strong>) flag tickets already in progress - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/f7d2de96f865c1553e12a1eb0305f53c2407c047">f7d2de9</a>] (<strong>todo-board</strong>) launch Claude sessions from tickets - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/7ba991c41ad8d69e947c62305a042fcfed0c3a9a">7ba991c</a>] (<strong>onboarding</strong>) TV guide uses the remote keyboard - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/07bc9d05bfa2ef1300fd1f85e035328f00828b9a">07bc9d0</a>] (<strong>discovery</strong>) flag series shelved in adult categories - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/eb8e2a30cb7af582d39bc6b832d21b6c10baf356">eb8e2a3</a>] (<strong>discovery</strong>) flag movies shelved in adult categories - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/a3786aae3272dc90659088a8cd351385cedbd031">a3786aa</a>] (<strong>qa</strong>) generate the remaining format clips - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/a8d27df8c47729ecb96e8eb93102ee484adf3135">a8d27df</a>] (<strong>onboarding</strong>) tablet follows validated frames - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/7b9305704d3f0fbf5ac1bc459ed21488b1cec35c">7b93057</a>] (<strong>qa</strong>) write the audio matrix to a CSV - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/2f08840555651a0f438b4cdbf92b96bea469b11a">2f08840</a>] (<strong>onboarding</strong>) phone follows validated frames - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/24a181dc792cfa1ab261594769bf5c78f1a5f480">24a181d</a>] (<strong>player</strong>) build FFmpeg decoder from androidx 1.11.1 - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/fc698b28b3662f4681acacd9531a4d72a4e38e90">fc698b2</a>] (<strong>player</strong>) kill switch for the software audio decoder - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/1b3567060fe1ab547b45c395a71a725c33b46e62">1b35670</a>] (<strong>paywall</strong>) name the title before the paywall opens - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/8589e28a48ea4604ad0cf8bc15a63c25d6be52fd">8589e28</a>] (<strong>todo-board</strong>) add ticket control tower - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/13b3dd64402b89484403ad7c37f8646de241ae84">13b3dd6</a>] (<strong>epg</strong>) count skipped guide programmes - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/bfdfce7ca37179af0e89e8205f82918272bc5ec3">bfdfce7</a>] (<strong>home</strong>) show an empty-catalogue message - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/f33fec9f596579309279bebee44ccf650ab511bd">f33fec9</a>] (<strong>catalog</strong>) localize genre filter labels - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/88617bb607c7e6c9be8f6be9dc81f333e005e125">88617bb</a>] (<strong>live</strong>) show a skeleton while TV category channels load - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/94b242a0cb134e61eed4e3baacfac262f7b69d65">94b242a</a>] (<strong>home</strong>) add favourite channels to phone Home - Alexis Burgos</p>
+</li>
+</ul>
+<h4>Testing</h4>
+<ul>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/95fab00133403e2ab8f4529eb663b7191f6517af">95fab00</a>] (<strong>qa</strong>) video clip generator and per-clip resume reset - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/2d03b3605d4c7f466f7d6e2c80d391bab38138e6">2d03b36</a>] (<strong>qa</strong>) add DTS, TrueHD and FLAC to audio matrix - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/d728be8583b8b467fb2a1ed6dc2cef0e42f844c7">d728be8</a>] (<strong>provider</strong>) check the provider data Koin graph - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/6651f45b0117f8ed5202770da4ccb8bbbe3099c5">6651f45</a>] (<strong>player</strong>) bind FeatureFlags in the media session service test - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/2291cf712549ff23e3d82cc12debb58a5d8f5e6f">2291cf7</a>] (<strong>playback</strong>) keep the playback user agent distinct from enrichment - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/78793234b9649aae8776a5f7baf7b16101f3f0f4">7879323</a>] (<strong>architecture</strong>) refuse tests that read the system clock or zone - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/5f28344fdabe9a2ae8c8201c14ad389eb022091c">5f28344</a>] (<strong>compose-ui</strong>) follow onboarding slot and view model changes - Alexis Burgos</p>
+</li>
+<li>
+<p>[<a href="https://github.com/GenovaIPTV/Genova/commit/d56b4c0d72b9c5fe5fa70409ac814c0ba10c03a3">d56b4c0</a>] (<strong>release</strong>) hold on noisy rollout, not thin sample - Alexis Burgos</p>
+</li>
+</ul>
+<hr />
 <h2>0.16.31 - 2026-10-26</h2>
 <h4>Bug Fixes</h4>
 <ul>
