@@ -19,7 +19,7 @@
 
 ## 🎬 What is Genova IPTV?
 
-**Genova IPTV** is a next-generation IPTV player designed for everyone. Enjoy your favorite TV channels, shows, and VOD content on any device, with a beautiful and intuitive interface. Genova is free to use.
+**Genova IPTV** is a next-generation IPTV player designed for everyone. Enjoy your favorite TV channels, shows, and VOD content on any device, with a beautiful and intuitive interface. Browsing and the demo are free; playing your own provider starts with a 7-day free trial.
 
 ---
 
@@ -99,7 +99,7 @@ Genova is under active development. Please note the following current limitation
 > No. Genova is a player only. You must provide your own legal IPTV sources (Xtream, M3U, etc.).
 
 **Q: Is Genova free?**
-> Yes, Genova is free to use. A pricing model (such as a freemium plan with premium features) is being considered for the future; any change will be announced in the app and in our Terms of Service beforehand.
+> Browsing, favourites and the demo catalog are free. Playing your own provider needs Genova Premium: 7-day free trial, then a subscription billed by Google Play. No ads.
 
 **Q: Is my data private?**
 > Yes. Your playlists, credentials and settings are stored locally on your device and never sent to us. The app only sends pseudonymous usage statistics and crash reports to help us improve it; see the [Privacy Policy](https://mainthreadapps.com/genovaiptv/privacy-policy).
