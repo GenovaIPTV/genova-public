@@ -79,8 +79,8 @@ Genova is under active development. Please note the following current focus area
 1. **Download Genova IPTV** — [available on Google Play](https://play.google.com/store/apps/details?id=com.genova.player)
    for Android (Phone & TV); other platforms are on the way.
 2. **Add Your IPTV Source**:
-   - Go to Settings > Streams
-   - Enter your Xtream Codes credentials or M3U/M3U8 playlist URL
+   - Go to Settings > Providers
+   - Enter your M3U/M3U8 playlist URL or compatible service credentials
    - Genova will automatically fetch and organize your channels
 3. **Browse & Watch**:
    - Explore Live TV channels organized by categories
