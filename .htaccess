@@ -5,6 +5,9 @@ Options -Indexes
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
+  # No company homepage yet: send the root (any host/scheme) to the Genova site in one hop
+  RewriteRule ^$ https://mainthreadapps.com/genovaiptv/ [L,R=301]
+
   # One canonical origin: HTTPS on the bare domain
   RewriteCond %{HTTPS} !=on [OR]
   RewriteCond %{HTTP_HOST} ^www\. [NC]
@@ -16,8 +19,9 @@ Options -Indexes
   # Repository files that are not part of the website
   RewriteRule ^(README\.md|assets|docs)(/|$) - [L,R=404]
 
-  # No company homepage yet: send the root to the Genova site
-  RewriteRule ^$ /genovaiptv/ [L,R=301]
+  # Add trailing slash to directories cleanly without :443 from mod_dir
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^(.+[^/])$ https://mainthreadapps.com/$1/ [L,R=301]
 </IfModule>
 
 <IfModule mod_headers.c>
