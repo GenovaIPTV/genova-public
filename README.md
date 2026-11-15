@@ -66,14 +66,11 @@ We value your input! Here's how you can help:
 - **Category-Based Content**: Intelligent organization by categories for all content types
 - **Fullscreen Video Player**: High-quality playback for Live TV, VOD, and Series
 
-### 🚧 Current Limitations
+### 🚧 Active Development
 
-Genova is under active development. Please note the following current limitations:
-- **Search**: The global search is currently very strict and requires exact word matches.
-- **Video Player**: We are actively stabilizing the video player. Picture-in-Picture (PiP) is currently disabled.
-- **Binge Watching**: The "Up Next" auto-play overlay currently triggers precisely at the end of the video.
-- **Continue Watching**: Playback history is saved immediately upon viewing, rather than after a few seconds of engagement.
-- **Adaptive UI**: We are in the process of redesigning our multi-platform layouts to better suit specific devices.
+Genova is under active development. Please note the following current focus areas:
+- **Additional Platforms**: Android (Phone & TV) is our primary focus; iOS, tvOS, and Desktop builds are in progress.
+- **Binge Watching**: The "Up Next" auto-play overlay currently triggers at the end of the video.
 
 ---
 
