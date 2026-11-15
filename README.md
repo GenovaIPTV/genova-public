@@ -52,8 +52,8 @@ We value your input! Here's how you can help:
 
 ### Core Functionality
 - **Universal Compatibility**: Works with Xtream Codes, M3U/M3U8 playlists, and public IPTV sources
-- **Current Platforms**: Android
-- **Coming Soon**: tvOS (Apple TV), iOS, macOS, Windows, Linux, Android TV
+- **Current Platforms**: Android (Phone & TV)
+- **Coming Soon**: tvOS (Apple TV), iOS, macOS, Windows, Linux
 - **Live TV & EPG**: Browse channels with integrated Electronic Program Guide
 - **VOD & Series**: Browse movies and TV series with category organization
 - **Smart Search**: Real-time search across all content types
@@ -77,7 +77,7 @@ Genova is under active development. Please note the following current focus area
 ## 🚀 Getting Started
 
 1. **Download Genova IPTV** — [available on Google Play](https://play.google.com/store/apps/details?id=com.genova.player)
-   for Android; other platforms are on the way.
+   for Android (Phone & TV); other platforms are on the way.
 2. **Add Your IPTV Source**:
    - Go to Settings > Streams
    - Enter your Xtream Codes credentials or M3U/M3U8 playlist URL
@@ -96,7 +96,7 @@ Genova is under active development. Please note the following current focus area
 > No. Genova is a player only. You must provide your own legal IPTV sources (Xtream, M3U, etc.).
 
 **Q: Is Genova free?**
-> Browsing, favourites and the demo catalog are free. Playing your own provider needs Genova Premium: 7-day free trial, then a subscription billed by Google Play. No ads.
+> Browsing, favourites and the demo catalog are free. Playing your own provider needs Genova Premium: 7-day free trial, then €2.99/month or €19.99/year (billed by Google Play in your local currency). No ads.
 
 **Q: Is my data private?**
 > Yes. Your playlists, credentials and settings are stored locally on your device and never sent to us. The app only sends pseudonymous usage statistics and crash reports to help us improve it; see the [Privacy Policy](https://mainthreadapps.com/genovaiptv/privacy-policy).
