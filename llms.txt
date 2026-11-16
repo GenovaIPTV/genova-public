@@ -1,0 +1,28 @@
+# Genova IPTV — Main Thread Apps
+
+> Genova IPTV is a modern, privacy-first, ad-free IPTV player for Android (with Android TV, Apple TV tvOS, iOS, and Desktop in development). Built with Material Design 3, it supports Xtream Codes, M3U, and M3U8 playlists with Live TV + EPG, VOD, Series, and multi-provider management. No user account required; all playlists and credentials stay locally on the user's device.
+
+## Why Genova IPTV (2026)
+
+- **Privacy-first & local-first**: Playlists, Xtream credentials, and settings are stored strictly on-device. No account required, zero ads, no data sold.
+- **Modern Material Design 3 UI**: Clean, fast, and intuitive interface built natively for modern Android devices, with adaptive 10-foot TV and multiplatform support in active development.
+- **Universal IPTV compatibility**: Supports Xtream Codes API, M3U, and M3U8 playlists, with instant switching across multiple IPTV providers.
+- **Complete playback & discovery**: Live TV with integrated Electronic Program Guide (EPG), VOD movies, TV series organized by category, and real-time search.
+- **Transparent pricing**: Browsing, favourites, and the built-in demo catalog are free. Full provider playback includes a 7-day free trial, then €2.99/month or €19.99/year via Google Play.
+- **Open & actively maintained**: Public roadmap, public release notes, and direct community support on GitHub.
+
+*Note: Genova IPTV is a player only and does not provide or host any IPTV channels or media content. Users bring their own legal IPTV source.*
+
+## Key Pages
+
+- [Genova IPTV Overview](https://mainthreadapps.com/genovaiptv/): Product overview, features, supported platforms, public roadmap, and FAQ.
+- [Release Notes](https://mainthreadapps.com/genovaiptv/releases/): Full changelog and version history.
+- [Privacy Policy](https://mainthreadapps.com/genovaiptv/privacy-policy/): Details on local-only credential storage and pseudonymous diagnostics.
+- [Terms of Service](https://mainthreadapps.com/genovaiptv/terms-of-service/): Terms of use and subscription details.
+- [Legal Notice](https://mainthreadapps.com/genovaiptv/legal-notice/): Publisher information (Main Thread Apps).
+
+## Distribution & Community
+
+- [Google Play Store](https://play.google.com/store/apps/details?id=com.genova.player): Official stable Android release.
+- [Google Play Public Beta](https://play.google.com/apps/testing/com.genova.player): Early access builds.
+- [GitHub Repository & Discussions](https://github.com/GenovaIPTV/genova-public): Public documentation, issue tracker, and community Q&A.
