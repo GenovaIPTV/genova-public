@@ -1,118 +1,79 @@
-# Genova IPTV – The Universal Multiplatform IPTV Player
+# Genova IPTV – Modern Multiplatform IPTV & M3U Player
 
-> 🎉 **Now available on Google Play**
+> 🎉 **Available now on Google Play (Android Phone, Tablet & Android TV)**
 >
-> Genova IPTV is out of closed testing and published on the Play Store. Anyone can install the stable release, or opt
-> into the public beta to get new features early.
->
-> - **[Install from Google Play](https://play.google.com/store/apps/details?id=com.genova.player)** — stable release
-> - **[Join the public beta](https://play.google.com/apps/testing/com.genova.player)** — pre-release builds, opt in and
->   out at any time
->
-> Development is still active: features evolve, and we welcome feedback and contributions.
+> - **[Get Genova IPTV on Google Play](https://play.google.com/store/apps/details?id=com.genova.player)**
+> - **[Official Website & Platform Hub](https://mainthreadapps.com/genovaiptv/)**
+> - **[Release Notes](https://mainthreadapps.com/genovaiptv/releases/)**
 
 <div align="center">
-  <img src="assets/genova-logo.svg" alt="Genova Logo" width="200"/>
+  <img src="assets/genova-logo.svg" alt="Genova Logo" width="180"/>
 </div>
 
 ---
 
 ## 🎬 What is Genova IPTV?
 
-**Genova IPTV** is a next-generation IPTV player designed for everyone. Enjoy your favorite TV channels, shows, and VOD content on any device, with a beautiful and intuitive interface. Browsing and the demo are free; playing your own provider starts with a 7-day free trial.
+**Genova IPTV** is a fast, privacy-first **"Bring Your Own Source"** IPTV & M3U player. Connect the streaming sources you already own (M3U/M3U8 playlists or compatible services) and browse their catalog in a clean, adaptive interface across your phone, tablet, and TV.
+
+Browsing the interface, managing favorites, and exploring the built-in demo catalog are completely free. Playing streams from your own source starts with a **7-day free trial**.
 
 ---
 
-## 📱 Get Genova IPTV
+## 📱 Platform Availability & Rollout Order
 
-### Android
-
-- **[Install from Google Play](https://play.google.com/store/apps/details?id=com.genova.player)** — the stable release,
-  available to everyone
-- **[Join the public beta](https://play.google.com/apps/testing/com.genova.player)** — get new features before they
-  reach the stable channel
-
-> **About the public beta**: opening the link above enrols your Google account in the beta channel, then Play delivers
-> pre-release builds as normal updates. You can leave the beta at any time from the same page — Play will move you back
-> to the stable release on its next update.
-
-### 💬 Share Your Feedback
-
-We value your input! Here's how you can help:
-
-- **🐛 Report Bugs**: [Open an issue on GitHub](https://github.com/GenovaIPTV/genova-public/issues) - For technical issues, crashes, or bugs
-- **💡 Feature Requests & Discussions**: [GitHub Discussions](https://github.com/GenovaIPTV/genova-public/discussions) - For questions, feature suggestions, and community discussions
-- **⭐ Rate the app**: [Leave a review on Google Play](https://play.google.com/store/apps/details?id=com.genova.player) - Reviews genuinely help the project
-
-**Thank you for helping make Genova IPTV better!** 🙏
+| Platform | Status | Link / Notes |
+| :--- | :--- | :--- |
+| **Android (Phone & Tablet)** | 🟢 **Available** | **[Download on Google Play](https://play.google.com/store/apps/details?id=com.genova.player)** (Android 8.0+, Material Design 3) |
+| **Android TV & Google TV** | 🟢 **Available** | **[Download on Google Play](https://play.google.com/store/apps/details?id=com.genova.player)** (10-foot remote/D-pad UI, Watch Next) |
+| **iPhone (iOS)** | 🟡 **Next Release** | Next platform in line (App Store, high-performance native playback engine) |
+| **Apple TV (tvOS)** | 🟣 **Planned** | Following the iOS release (10-foot living-room UI, native playback engine) |
+| **iPad (iPadOS)** | 🟣 **Planned** | Adaptive multi-pane layout and Picture-in-Picture |
+| **Desktop (macOS first)** | 🟣 **Planned** | macOS first, followed by Windows and Linux |
 
 ---
 
-## 🌟 Key Features
+## ✨ Key Features
 
-### Core Functionality
-- **Universal Compatibility**: Works with Xtream Codes, M3U/M3U8 playlists, and public IPTV sources
-- **Current Platforms**: Android (Phone & TV)
-- **Coming Soon**: tvOS (Apple TV), iOS, macOS, Windows, Linux
-- **Live TV & EPG**: Browse channels with integrated Electronic Program Guide
-- **VOD & Series**: Browse movies and TV series with category organization
-- **Smart Search**: Real-time search across all content types
-- **Provider Management**: Full provider management with validation and testing
-- **No IPTV Service**: Player only - you provide your own IPTV sources
-
-### User Experience
-- **Modern UI**: Clean, ergonomic, and responsive interface with Material Design 3 (Android) and SwiftUI (tvOS)
-- **Platform-Optimized Navigation**: Intuitive navigation tailored to each platform
-- **Category-Based Content**: Intelligent organization by categories for all content types
-- **Fullscreen Video Player**: High-quality playback for Live TV, VOD, and Series
-
-### 🚧 Active Development
-
-Genova is under active development. Please note the following current focus areas:
-- **Additional Platforms**: Android (Phone & TV) is our primary focus; iOS, tvOS, and Desktop builds are in progress.
-- **Binge Watching**: The "Up Next" auto-play overlay currently triggers at the end of the video.
+- **Multi-Source & Offline-First**: Connect remote M3U/M3U8 playlist URLs or compatible streaming APIs (server URL, username, password). Manage multiple providers at once with fast background sync and instant local browsing.
+- **Live TV & Electronic Program Guide (EPG)**: Clean EPG timeline showing what is airing now and coming up next, with channel logos, progress bars, and schedule browsing right below the player.
+- **Continue Watching & Picture-in-Picture (PiP)**: Resume movies and series right where you left off, multitask with PiP on phones and tablets, select audio/subtitle tracks, and rely on automatic stream fallback.
+- **Universal Real-Time Search**: Find any channel, movie, or series in seconds across all active providers, pin favorites to Home, and hide unwanted categories.
+- **Adaptive by Design**: One-handed bottom navigation on phones, split-pane views on tablets, and a dedicated 10-foot remote (D-pad) interface on Android TV.
+- **Privacy First & 100% Ad-Free**: Playlists, credentials, and watch history stay stored locally on your device. No user account required, zero ads, no data sold.
 
 ---
 
 ## 🚀 Getting Started
 
-1. **Download Genova IPTV** — [available on Google Play](https://play.google.com/store/apps/details?id=com.genova.player)
-   for Android (Phone & TV); other platforms are on the way.
-2. **Add Your IPTV Source**:
-   - Go to Settings > Providers
-   - Enter your M3U/M3U8 playlist URL or compatible service credentials
-   - Genova will automatically fetch and organize your channels
-3. **Browse & Watch**:
-   - Explore Live TV channels organized by categories
-   - Browse VOD movies and TV series
-   - Use search to find specific content
-   - Enjoy fullscreen video playback
+1. **Install Genova IPTV** from [Google Play](https://play.google.com/store/apps/details?id=com.genova.player) and explore the interface immediately with the built-in demo catalog.
+2. **Add Your Source**: Open *Settings › Providers* to enter your M3U/M3U8 playlist URL or compatible service credentials.
+3. **Start Your 7-Day Free Trial**: Launch playback on your own source to start your 7-day Genova Premium trial.
+
+> ⚠️ **Important — Player Only ("Bring Your Own Source")**: Genova IPTV is a media player only and ships with no preloaded provider, channel, or media catalog (aside from fictional demo data). The app does not provide, host, recommend, or resell any IPTV service or stream.
 
 ---
 
 ## ❓ FAQ
 
 **Q: Does Genova provide IPTV channels?**
-> No. Genova is a player only. You must provide your own legal IPTV sources (Xtream, M3U, etc.).
+> No. Genova is a player only. You must provide your own legal streaming sources (M3U/M3U8 playlist URL or compatible service credentials).
 
-**Q: Is Genova free?**
-> Browsing, favourites and the demo catalog are free. Playing your own provider needs Genova Premium: 7-day free trial, then €2.99/month or €19.99/year (billed by Google Play in your local currency). No ads.
+**Q: How does pricing work?**
+> Browsing, favorites, and the built-in demo catalog are free. Playing streams from your own provider requires **Genova Premium**: 7-day free trial, then **€2.99/month** or **€19.99/year** (billed via Google Play in your local currency), covering both your Android mobile devices and Android TV. Early subscribers keep their Tier 1 launch price locked in as long as their subscription remains active.
 
 **Q: Is my data private?**
-> Yes. Your playlists, credentials and settings are stored locally on your device and never sent to us. The app only sends pseudonymous usage statistics and crash reports to help us improve it; see the [Privacy Policy](https://mainthreadapps.com/genovaiptv/privacy-policy).
-
-**Q: What is the difference between the stable release and the public beta?**
-> Both come from Google Play. The stable release is the tested build everyone gets by default. The public beta ships the same builds earlier, so you see new features first and may hit rough edges. Opting in and out is free and reversible.
-
-**Q: Where can I get help?**
-> Ask in [GitHub Discussions](https://github.com/GenovaIPTV/genova-public/discussions/categories/q-a) for questions and community support.
+> Yes. Your playlists, credentials, and settings are stored locally on your device and never sent to us. The app only sends pseudonymous usage statistics and crash reports to help us improve it; see the [Privacy Policy](https://mainthreadapps.com/genovaiptv/privacy-policy/).
 
 ---
 
-## 🆘 Support & Contact
+## 💬 Feedback & Support
 
-- **Questions & Community**: [GitHub Discussions](https://github.com/GenovaIPTV/genova-public/discussions) - Questions, feature ideas, and community support
-- **Bug Reports**: [GitHub Issues](https://github.com/GenovaIPTV/genova-public/issues) - Report bugs and technical issues
+- **🌐 Official Website**: [mainthreadapps.com/genovaiptv](https://mainthreadapps.com/genovaiptv/)
+- **📋 Release Notes**: [mainthreadapps.com/genovaiptv/releases](https://mainthreadapps.com/genovaiptv/releases/)
+- **🐛 Bug Reports**: [GitHub Issues](https://github.com/GenovaIPTV/genova-public/issues)
+- **💡 Feature Requests & Q&A**: [GitHub Discussions](https://github.com/GenovaIPTV/genova-public/discussions)
+- **⭐ Rate the app**: [Leave a review on Google Play](https://play.google.com/store/apps/details?id=com.genova.player)
 
 ---
 
@@ -127,5 +88,5 @@ Series artwork and episode details come from [TMDB](https://www.themoviedb.org) 
 ---
 
 <div align="center">
-  Made with ❤️ by the Genova Team
+  © 2026 Main Thread Apps
 </div>
